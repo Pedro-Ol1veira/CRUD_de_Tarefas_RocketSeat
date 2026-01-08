@@ -31,8 +31,16 @@ export class Database {
     return data;
   }
 
-  select(table) {
+  select(table, search) {
     let data = this.#database[table] ?? [];
+    if (search.title || search.description) {
+      data = data.filter((row) => {
+        return (
+          row.title.includes(search.title) ||
+          row.description.includes(search.description)
+        );
+      });
+    }
 
     return data;
   }
