@@ -1,0 +1,20 @@
+{
+  "name": "crud_de_tarefas_rocketseat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedro-Ol1veira/CRUD_de_Tarefas_RocketSeat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pedro-Ol1veira/CRUD_de_Tarefas_RocketSeat/issues"
+  },
+  "homepage": "https://github.com/Pedro-Ol1veira/CRUD_de_Tarefas_RocketSeat#readme"
+}
