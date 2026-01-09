@@ -44,7 +44,7 @@
       "id": "5b9ffece-026a-4955-95ec-dd4fad092e30",
       "title": "teste update title",
       "description": "teste update description",
-      "completed_at": null,
+      "completed_at": 1767964720583,
       "created_at": 1767884373731,
       "updated_at": 1767964377564
     }

@@ -73,4 +73,17 @@ export class Database {
     
     
   }
+  
+  completeTask(table, id, data) {
+    const taskIndex = this.#database[table].findIndex(row => row.id == id);
+    
+    if(taskIndex > -1) {
+      this.#database[table][taskIndex].completed_at = Date.now();
+      this.#persist();
+    } else {
+      throw new Error("Id inválido");
+    }
+    
+    
+  }
 }
