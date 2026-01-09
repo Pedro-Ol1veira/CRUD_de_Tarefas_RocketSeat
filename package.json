@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Pedro-Ol1veira/CRUD_de_Tarefas_RocketSeat/issues"
   },
-  "homepage": "https://github.com/Pedro-Ol1veira/CRUD_de_Tarefas_RocketSeat#readme"
+  "homepage": "https://github.com/Pedro-Ol1veira/CRUD_de_Tarefas_RocketSeat#readme",
+  "dependencies": {
+    "csv-parse": "^6.1.0"
+  }
 }
