@@ -47,9 +47,25 @@ export class Database {
 
   delete(table, id) {
     const taskIndex = this.#database[table].findIndex(row => row.id == id);
-    console.log(taskIndex);
+    
     if(taskIndex > -1) {
       this.#database[table].splice(taskIndex, 1);
+      this.#persist();
+    } else {
+      throw new Error("Id inválido");
+    }
+    
+    
+  }
+
+  update(table, id, data) {
+    const taskIndex = this.#database[table].findIndex(row => row.id == id);
+    
+    if(taskIndex > -1) {
+      this.#database[table][taskIndex].title = data.title;
+      this.#database[table][taskIndex].description = data.description;
+      this.#database[table][taskIndex].updated_at = Date.now();
+      
       this.#persist();
     } else {
       throw new Error("Id inválido");
